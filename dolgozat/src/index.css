@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.upload {
+  margin-bottom: 2rem;
+}
+
+.upload input {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+  margin-right: 0.5rem;
+}
+
+.uploadButton {
+  padding: 0.5rem 1rem;
+  background: #0982c5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.uploadButton:hover {
+  background: #076ba0;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.gallery {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.stars {
+  margin-top: 0.5rem;
+}
+
+.stars span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.2s;
+}
+
+.stars span.active {
+  color: #f5b301;
+}
+
+.stars span:hover {
+  color: #f5b301;
+}
+
+.stars span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.stars span.active {
+  color: #f5b301;
+  animation: star-pulse 1.5s infinite alternate;
+}
+
+.stars:not(.rating-in-progress) span:hover,
+.stars:not(.rating-in-progress) span:hover ~ span {
+  color: #f5b301;
+  transform: scale(1.2);
+}
+
+.stars.rating-in-progress span {
+  animation: star-bounce 0.7s;
+}
+
+@keyframes star-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes star-pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px rgba(245, 179, 1, 0.1);
+  }
+  100% {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(245, 179, 1, 0.4);
+  }
+}

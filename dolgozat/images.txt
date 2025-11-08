@@ -1,0 +1,7 @@
+Példa kép URL-ek teszteléshez:
+
+https://picsum.photos/id/10/300
+https://picsum.photos/id/20/300
+https://picsum.photos/id/30/300
+https://picsum.photos/id/40/300
+https://picsum.photos/id/50/300
