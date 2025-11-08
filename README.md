@@ -26,6 +26,7 @@
 - Node.js
 - Express
 - CORS
+
 **Note:** *Backend API provided as part of technical school assignment. Frontend implementation is my original work.*
 
 ## 📦 Installation & Setup
