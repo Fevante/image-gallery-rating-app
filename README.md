@@ -36,13 +36,13 @@
 
 ### Clone Repository
 ```bash
-git clone https://github.com/your-username/image-gallery-rating-app.git
+git clone https://github.com/Fevante/image-gallery-rating-app.git
 cd image-gallery-rating-app
 ```
 
 ### Frontend Setup
 ```bash
-cd dolgozat
+cd image-gallery-rating-app
 npm install
 npm run dev
 ```
@@ -54,7 +54,7 @@ cd backend
 npm install
 npm start
 ```
-The backend will run on `http://localhost:3000`
+The backend will run on `http://localhost:3333`
 
 ## 🎯 Usage
 
